@@ -1,0 +1,48 @@
+# Build artifacts
+*.dbmdl
+*.jfm
+*.pdb
+*.log
+*.cache
+*.bak
+*.mdf
+*.ldf
+
+# User-specific files
+*.suo
+*.user
+*.vspscc
+*.vssscc
+*.vsp
+*.ncb
+*.aps
+*.sdf
+*.opendb
+
+# SQL Server project files
+*.dbproj.user
+*.sqlproj.user
+*.sqlproj.suo
+
+# VS Code settings
+.vscode/
+
+# Packages
+packages/
+bin/
+obj/
+
+# Deployment-related files
+*.publish.xml
+*.dacpac
+*.bacpac
+
+# Temp files
+~$*
+*.tmp
+*.nlog
+
+# Ignore local config files
+appsettings.json
+appsettings.*.json
+secrets.json

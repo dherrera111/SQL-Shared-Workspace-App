@@ -60,7 +60,8 @@
     <Folder Include="Properties" />
     <Folder Include="Security\" />
     <Folder Include="Server Objects\" />
-    <Folder Include="Workspace" />
+    <Folder Include="Tables" />
+    <Folder Include="Queries" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\sa.sql" />
@@ -72,6 +73,15 @@
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="Server Objects\AlwaysOn_health.sql" />
     <Build Include="Server Objects\telemetry_xevents.sql" />
-    <Build Include="Workspace\Table1.sql" />
+    <Build Include="Tables\Property.sql" />
+    <Build Include="Tables\Workspace.sql" />
+    <Build Include="Tables\UserRole.sql" />
+    <Build Include="Tables\User.sql" />
+    <Build Include="Tables\UserProperty.sql" />
+    <Build Include="Tables\WorkspaceType.sql" />
+    <Build Include="Tables\LeaseTerm.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Working-Space-DBMS.refactorlog" />
   </ItemGroup>
 </Project>

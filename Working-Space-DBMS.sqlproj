@@ -80,8 +80,14 @@
     <Build Include="Tables\UserProperty.sql" />
     <Build Include="Tables\WorkspaceType.sql" />
     <Build Include="Tables\LeaseTerm.sql" />
+    <Build Include="Tables\Country.sql" />
+    <Build Include="Tables\Province.sql" />
+    <Build Include="Tables\City.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Working-Space-DBMS.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Queries\create_database.sql" />
   </ItemGroup>
 </Project>

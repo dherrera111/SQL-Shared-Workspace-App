@@ -9,6 +9,7 @@
     [HasParkingLot] BIT NULL, 
     [HasPublicTransport] BIT NULL, 
     [Area] DECIMAL(18, 4) NOT NULL, 
+    
    
 )
 

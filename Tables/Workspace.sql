@@ -13,7 +13,7 @@
     CONSTRAINT [FK_Workspace_Property] FOREIGN KEY ([PropertyId]) REFERENCES [Property]([PropertyId]), 
     CONSTRAINT [FK_Workspace_LeaseTerm] FOREIGN KEY ([LeaseTermId]) REFERENCES [LeaseTerm]([LeaseTermId]), 
     CONSTRAINT [FK_Workspace_WorkspaceType] FOREIGN KEY ([WorkspaceTypeId]) REFERENCES [WorkspaceType]([WorkspaceTypeId]), 
-    CONSTRAINT [FK_Workspace_User] FOREIGN KEY ([Column]) REFERENCES [ToTable]([ToTableColumn]), 
+    CONSTRAINT [FK_Workspace_User] FOREIGN KEY ([UserId]) REFERENCES [User]([UserId]), 
 
 
 )

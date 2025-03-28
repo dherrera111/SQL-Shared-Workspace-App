@@ -6,7 +6,9 @@
     [LastName] VARCHAR(50) NOT NULL, 
     [PhoneNumber] VARCHAR(50) UNIQUE NOT NULL, 
     [EmailAddress] VARCHAR(50) UNIQUE NOT NULL, 
-    [PassWord] VARBINARY(250) NOT NULL, 
-    CONSTRAINT [FK_User_UserRole] FOREIGN KEY ([UserRoleId]) REFERENCES [UserRole]([UserRoleId])
+    [Password] VARBINARY(250) NOT NULL, 
+    CONSTRAINT [FK_User_UserRole] FOREIGN KEY ([UserRoleId]) REFERENCES [UserRole]([UserRoleId]), 
+    
+
 
 )

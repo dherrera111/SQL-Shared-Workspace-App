@@ -8,7 +8,12 @@
     [RoomNumber] VARCHAR(50) UNIQUE NOT NULL, 
     [MaxCapacity] INT NOT NULL, 
     [AvailableDate] DATE NOT NULL, 
-    [Price] NUMERIC NOT NULL, 
+    [Price] DECIMAL(18, 4) NOT NULL, 
     [UserId] INT NOT NULL, 
-    CONSTRAINT [FK_Workspace_Property] FOREIGN KEY ([PropertyId]) REFERENCES [Property]([PropertyId])
+    CONSTRAINT [FK_Workspace_Property] FOREIGN KEY ([PropertyId]) REFERENCES [Property]([PropertyId]), 
+    CONSTRAINT [FK_Workspace_LeaseTerm] FOREIGN KEY ([LeaseTermId]) REFERENCES [LeaseTerm]([LeaseTermId]), 
+    CONSTRAINT [FK_Workspace_WorkspaceType] FOREIGN KEY ([WorkspaceTypeId]) REFERENCES [WorkspaceType]([WorkspaceTypeId]), 
+    CONSTRAINT [FK_Workspace_User] FOREIGN KEY ([Column]) REFERENCES [ToTable]([ToTableColumn]), 
+
+
 )

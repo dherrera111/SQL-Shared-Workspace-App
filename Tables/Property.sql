@@ -8,7 +8,7 @@
     [Neighborhood] VARCHAR(50) NOT NULL, 
     [HasParkingLot] BIT NULL, 
     [HasPublicTransport] BIT NULL, 
-    [Area] NUMERIC NOT NULL, 
-    CONSTRAINT [FK_Property_Workspace] FOREIGN KEY ([CityId]) REFERENCES [Workspace]([WorkspaceId])
+    [Area] DECIMAL(18, 4) NOT NULL, 
+   
 )
 

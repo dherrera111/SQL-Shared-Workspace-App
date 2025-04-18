@@ -110,15 +110,15 @@ CREATE TABLE [dbo].[UserProperty]
 CREATE TABLE [dbo].[Workspace]
 (
 	[WorkspaceId] INT  NOT NULL PRIMARY KEY IDENTITY(1,1), 
-	[UserId] INT NOT NULL,
-	[WorkspaceTypeId] INT NOT NULL,
-	[LeaseTermId] INT NOT NULL,
+    [PropertyId] INT  NOT NULL, 
     [FloorNumber] INT NOT NULL, 
+    [WorkspaceTypeId] INT NOT NULL, 
+    [LeaseTermId] INT NOT NULL, 
+    [UserId] INT NOT NULL, 
     [RoomNumber] VARCHAR(50) UNIQUE NOT NULL, 
     [MaxCapacity] INT NOT NULL, 
-    [AvailableDate] DATE NOT NULL, 
+    [AvailableDate] DATE NOT NULL, -- -- Indicates the starting date of availability
     [Price] DECIMAL(10, 4) NOT NULL, 
-    [PropertyId] INT  NOT NULL, 
     CONSTRAINT [FK_Workspace_Property] FOREIGN KEY ([PropertyId]) REFERENCES [Property]([PropertyId]), 
     CONSTRAINT [FK_Workspace_LeaseTerm] FOREIGN KEY ([LeaseTermId]) REFERENCES [LeaseTerm]([LeaseTermId]), 
     CONSTRAINT [FK_Workspace_WorkspaceType] FOREIGN KEY ([WorkspaceTypeId]) REFERENCES [WorkspaceType]([WorkspaceTypeId]), 

@@ -90,5 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Queries\create_database.sql" />
+    <None Include="Queries\VictorQueries.sql" />
   </ItemGroup>
 </Project>

@@ -62,6 +62,7 @@
     <Folder Include="Server Objects\" />
     <Folder Include="Tables" />
     <Folder Include="Queries" />
+    <Folder Include="Compilations" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\sa.sql" />
